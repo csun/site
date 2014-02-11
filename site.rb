@@ -8,5 +8,13 @@ end
 network_setup
 
 get '/'  do
-	'More to come'
+	erb :index
+end
+
+get '/work' do
+	erb :work
+end
+
+get '/bio' do
+	erb :bio
 end
