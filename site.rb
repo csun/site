@@ -15,6 +15,6 @@ get '/work' do
 	erb :work
 end
 
-get '/bio' do
-	erb :bio
+get '/about' do
+	erb :about
 end
