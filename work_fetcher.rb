@@ -1,8 +1,10 @@
+require 'octokit'
+require './credentials'
+
 module WorkFetcher
+	@client = Octokit::Client.new access_token: Credentials.access_token
+
 	def self.list_of_repositories
-		[
-			{'name' => 'site', 'description' => 'The site you see in front of you!'},
-			{'name' => 'other', 'description' => 'Another cool thing'}
-		]
+		@client.repos(@client.user.login)
 	end
 end

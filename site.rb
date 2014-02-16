@@ -8,7 +8,6 @@ end
 
 network_setup
 
-
 get '/'  do
 	erb :index
 end
