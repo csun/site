@@ -7,7 +7,6 @@
 
 <h2>Organizations</h2>
 <% @organizations.each do |org| %>
-	<b><%= org['name'] %></b>
-	<%= org['description'] %>
+	<b><%= org['login'] %></b>
 	<br>
 <% end %>
