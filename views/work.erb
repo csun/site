@@ -1,5 +1,13 @@
-<% @works.each do |work| %>
-	<b><%= work['name'] %></b>
-	<%= work['description'] %>
+<h2>Repos</h2>
+<% @repos.each do |repo| %>
+	<b><%= repo['name'] %></b>
+	<%= repo['description'] %>
+	<br>
+<% end %>
+
+<h2>Organizations</h2>
+<% @organizations.each do |org| %>
+	<b><%= org['name'] %></b>
+	<%= org['description'] %>
 	<br>
 <% end %>

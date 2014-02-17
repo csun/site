@@ -13,7 +13,8 @@ get '/'  do
 end
 
 get '/work' do
-	@works = WorkFetcher.list_of_repositories
+	@repos = WorkFetcher.repos
+	@organizations = WorkFetcher.organizations
 	erb :work
 end
 
