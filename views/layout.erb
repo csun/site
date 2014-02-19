@@ -1,6 +1,20 @@
-<head></head>
-<%= erb :header %>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The home of Cameron Sun</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css"/>
+</head>
+<body>
+	<div class="container">
+		<%= erb :header %>
 
-<%= yield %>
-<br>
-<%= erb :footer %>
+		<%= yield %>
+		<br>
+		<%= erb :footer %>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>
