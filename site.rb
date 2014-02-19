@@ -1,4 +1,5 @@
 require 'sinatra'
+require './work_fetcher'
 
 def network_setup
 	set :port, 80
@@ -12,6 +13,8 @@ get '/'  do
 end
 
 get '/work' do
+	@repos = WorkFetcher.repos
+	@organizations = WorkFetcher.organizations
 	erb :work
 end
 
