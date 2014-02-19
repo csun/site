@@ -2,19 +2,23 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>The home of Cameron Sun</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"  media="screen"/>
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/custom.css"  type="text/css"/>
 </head>
 <body>
-	<div class="container">
-		<%= erb :header %>
+	<%= erb :header %>
 
+	<div class="container-fluid">
 		<%= yield %>
-		<br>
-		<%= erb :footer %>
-
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 	</div>
+	<br>
+	<%= erb :footer %>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
