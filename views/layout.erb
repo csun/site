@@ -10,10 +10,10 @@
 	<link rel="stylesheet" href="css/custom.css"  type="text/css"/>
 </head>
 <body>
-	<%= erb :header %>
-
-	<%= yield %>
-	
+	<div id="wrap">
+		<%= erb :header %>
+		<%= yield %>
+	</div>
 	<%= erb :footer %>
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
