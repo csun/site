@@ -1,3 +1,7 @@
+.centered-text {
+	text-align: center;
+}
+
 .navbar-nav.nav-justified > li{
-    float:none;
+	float:none;
 }
