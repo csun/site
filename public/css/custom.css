@@ -5,3 +5,12 @@
 .navbar-nav.nav-justified > li{
 	float:none;
 }
+
+#main-jumbotron {
+	height: 400px;
+
+	background: url(../images/test-index.jpg); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover; 
+}
