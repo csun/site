@@ -1,5 +1,6 @@
 require 'sinatra'
 require './work_fetcher'
+require './description_generator'
 
 def network_setup
 	set :port, 80
@@ -9,6 +10,7 @@ end
 network_setup
 
 get '/'  do
+	@description = DescriptionGenerator.random_description
 	erb :index
 end
 
