@@ -25,8 +25,17 @@ html, body {
 #main-jumbotron {
 	height: 400px;
 
-	background: url(../images/test-index.jpg); 
+	background: url(../images/index.jpg); 
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover; 
+}
+
+#about-jumbotron {
+	height: 400px;
+
+	background: url(../images/about.jpg); 
+	background-repeat: no-repeat;
+	background-position: 50% 30%;
 	background-size: cover; 
 }
