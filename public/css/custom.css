@@ -12,7 +12,7 @@ html, body {
 #footer {
 	height: 30px;
 }
-
+/* end Footer settings */
 
 .centered-text {
 	text-align: center;
@@ -20,6 +20,13 @@ html, body {
 
 .navbar-nav.nav-justified > li{
 	float:none;
+}
+
+.repo-row {
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-left: 1px solid #ccc;
 }
 
 #main-jumbotron {

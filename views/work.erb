@@ -1,12 +1,19 @@
-<h2>Repos</h2>
-<% @repos.each do |repo| %>
-	<b><%= repo['name'] %></b>
-	<%= repo['description'] %>
-	<br>
-<% end %>
-
-<h2>Organizations</h2>
-<% @organizations.each do |org| %>
-	<b><%= org['login'] %></b>
-	<br>
-<% end %>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+			<h1 class="centered-text">
+				A collection of my latest and greatest works, loaded directly from my <a href="http://github.com/igpay">github</a>:
+			</h1>
+			<div class="container-fluid">
+				<% @repos.each do |repo| %>
+				<div class="row repo-row">
+					<h2><a href=<%= repo.url %>><%= repo.name %></a></h2>
+					<p class="lead"><%= repo.description %></p>
+					<br>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
