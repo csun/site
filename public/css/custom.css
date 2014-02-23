@@ -27,6 +27,14 @@ body {
 	float:none;
 }
 
+.navbar-nav > li > a {
+	font-size: 20px;
+}
+
+#logo {
+	font-size: 32px;
+}
+
 .centered-text {
 	text-align: center;
 }
@@ -61,4 +69,34 @@ body {
 	background-position: 50% 27%;
 	background-size: cover; 
 	border-bottom: 3px solid #6475A6;
+}
+
+/* For logo icon -----*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-r1fvuh');
+	src:url('../fonts/icomoon.eot?#iefix-r1fvuh') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-r1fvuh') format('woff'),
+		url('../fonts/icomoon.ttf?-r1fvuh') format('truetype'),
+		url('../fonts/icomoon.svg?-r1fvuh#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+	content: "\e600";
 }
