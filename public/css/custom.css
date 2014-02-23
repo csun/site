@@ -1,36 +1,50 @@
-/* Footer settings */
-html, body {
+html, body{
 	height: 100%;
+}
+
+body {
+	background: #EEEFF4;
 }
 
 #wrap {
 	min-height: 100%;
 	margin-bottom: -30px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 #footer {
+	padding-top: 5px;
 	height: 30px;
 }
-/* end Footer settings */
 
-.centered-text {
-	text-align: center;
+.navbar-default {
+	background: #EEEFF4;
+	border-bottom: 2px solid #6475A6;
 }
 
 .navbar-nav.nav-justified > li{
 	float:none;
 }
 
+.centered-text {
+	text-align: center;
+}
+
 .repo-row {
 	padding-left: 20px;
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+.left-border {
 	border-left: 1px solid #ccc;
 }
 
 #main-jumbotron {
-	height: 400px;
+	height: 600px;
+	margin-bottom: 0;
+
+	padding-top: 150px;
 
 	background: url(../images/index.jpg); 
 	background-repeat: no-repeat;
@@ -43,6 +57,7 @@ html, body {
 
 	background: url(../images/about.jpg); 
 	background-repeat: no-repeat;
-	background-position: 50% 30%;
+	background-position: 50% 27%;
 	background-size: cover; 
+	border-bottom: 3px solid #6475A6;
 }

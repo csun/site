@@ -3,11 +3,11 @@
 		<div class="col-xs-2"></div>
 		<div class="col-xs-8">
 			<h1 class="centered-text">
-				A collection of my latest and greatest works, loaded directly from my <a href="http://github.com/igpay">github</a>:
+				A collection of my latest and greatest projects, loaded directly from my <a href="http://github.com/igpay">github</a>:
 			</h1>
 			<div class="container-fluid">
 				<% @repos.each do |repo| %>
-				<div class="row repo-row">
+				<div class="row repo-row left-border">
 					<h2><a href=<%= repo.url %>><%= repo.name %></a></h2>
 					<p class="lead"><%= repo.description %></p>
 					<br>
