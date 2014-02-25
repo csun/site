@@ -35,6 +35,11 @@ body {
 	font-size: 32px;
 }
 
+#work-header {
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
 .centered-text {
 	text-align: center;
 }
