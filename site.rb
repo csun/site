@@ -16,7 +16,6 @@ end
 
 get '/work' do
 	@repos = WorkFetcher.repos
-	@organizations = WorkFetcher.organizations
 	erb :work
 end
 
