@@ -5,6 +5,7 @@ require './description_generator'
 def network_setup
 	set :port, 80
 	set :bind, '0.0.0.0'
+	set :environment, :production
 end
 
 network_setup
@@ -21,4 +22,12 @@ end
 
 get '/about' do
 	erb :about
+end
+
+not_found do
+	erb :'404'
+end
+
+error do
+	erb :error
 end

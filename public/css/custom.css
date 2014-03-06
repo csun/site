@@ -76,6 +76,10 @@ body {
 	border-bottom: 3px solid #6475A6;
 }
 
+.error-display {
+	margin-top: 15%;
+}
+
 /* For logo icon -----*/
 @font-face {
 	font-family: 'icomoon';
