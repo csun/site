@@ -8,7 +8,12 @@
 			<div class="container-fluid">
 				<% @repos.each do |repo| %>
 				<div class="row repo-row left-border">
-					<h2><a href=<%= repo.url %>><%= repo.name %></a></h2>
+					<h2>
+						<% if repo.fork %>
+							 <i class="fa fa-code-fork"></i>
+						<% end %>
+						<a href=<%= repo.url %>><%= repo.name %></a>
+					</h2>
 					<p class="lead"><%= repo.description %></p>
 					<br>
 				</div>

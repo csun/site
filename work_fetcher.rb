@@ -39,5 +39,4 @@ module WorkFetcher
 		end
 		repos
 	end
-
 end

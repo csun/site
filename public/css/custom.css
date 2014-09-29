@@ -4,18 +4,17 @@ html, body{
 
 body {
 	background: #EEEFF4;
+	font-size: 16px;
 }
 
 #wrap {
 	min-height: 100%;
-	margin-bottom: -30px;
-	padding-bottom: 45px;
 }
 
 #footer {
-	border-top: 1px dashed #6475A6;
-	padding-top: 5px;
-	height: 30px;
+	padding-top: 30px;
+	height: 120px;
+	font-size: 12px;
 }
 
 .navbar-default {
